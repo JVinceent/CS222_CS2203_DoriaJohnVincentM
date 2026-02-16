@@ -6,13 +6,10 @@ class Song
     public string artist;
     public double duration;
 
-    // Default constructor
     public Song() : this("Unknown", "Unknown", 0.0) { }
 
-    // Constructor 
     public Song(string title, string artist) : this(title, artist, 0.0) { }
 
-    // Full constructor
     public Song(string title, string artist, double duration)
     {
         this.title = string.IsNullOrWhiteSpace(title) ? "Unknown" : title;
